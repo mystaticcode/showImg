@@ -2,7 +2,7 @@
 	<div class="hong" @click="show()">
 		
 			<aside v-show="show_hb">
-				<img src="../../../../public/hong/hong.png" >
+				<img src="https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100208821.png" >
 				<h3>
 					新用户注册领取388元大礼包
 					<span>立即领取<i class="iconfont font">&#xe62b;</i></span>

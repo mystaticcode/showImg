@@ -1,57 +1,66 @@
 <template>
-	<ul class="icons">
-		<li v-for="item in imgURL" :key="item.id">
-			<router-link to="/">
-				<img :src="item.imgURL" />
-				<p>{{item.txt}}</p>
-			</router-link>
-		</li>
-	</ul>
+  <div class="menu">
+    <div class="entry"></div>
+    <ul class="icons">
+      <li v-for="item in imgURL" :key="item.id">
+        <router-link to="/">
+          <img :src="item.imgURL" />
+          <p>{{ item.txt }}</p>
+        </router-link>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-	export default{
-		name:'Recommend',
-		data(){
-			return{
-				imgURL:[
-					{id:1,imgURL:'imgs/01.png',txt:'周边游'},
-					{id:2,imgURL:'imgs/02.png',txt:'国内游'},
-					{id:3,imgURL:'imgs/03.png',txt:'出境游'},
-					{id:4,imgURL:'imgs/04.png',txt:'自由行'},
-					{id:5,imgURL:'imgs/05.png',txt:'酒店民宿'},
-				],
-			}
-		}
-	}
+export default {
+  name: "Recommend",
+  data() {
+    return {
+      imgURL: [
+        { id: 1, imgURL: "https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100209990.png", txt: "周边游" },
+        { id: 2, imgURL: "https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100209991.png", txt: "国内游" },
+        { id: 3, imgURL: "https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100209987.png", txt: "出境游" },
+        { id: 4, imgURL: "https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100209988.png", txt: "自由行" },
+        { id: 5, imgURL: "https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100209989.png", txt: "酒店民宿" },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-	
-	.icons{
-		border-bottom: 0.03rem solid #d3d3d3;
-		overflow: hidden;
-		padding: 0.8rem 0 0;
+.menu {
+  height: 2.5rem;
+  width: 100%;
+}
 
-		
-	}
-	a{
-		text-decoration: none;
-	}
-	
-	.icons li{
-		float: left;
-		width: 20%;
-		text-align: center;
-	}
-	.icons li img{
-		width: 1rem;
-		height: 1rem;
-	}
-	
-	.icons li p{
-		color: #000000;
-		padding-top: 0.15rem;
-		padding-bottom: 0.5rem;
-	}
+.menu .entry {
+  width: 100%;
+  height: 0.9rem;
+  border: none;
+}
+
+.icons {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+.icons li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.icons li img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.icons li p {
+  color: #000000;
+  padding-top: 0.15rem;
+  padding-bottom: 0.5rem;
+}
 </style>

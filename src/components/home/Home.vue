@@ -1,67 +1,74 @@
 <template>
-	<div>
-		<Banner></Banner>
-		<Recommend></Recommend>
-		<Bg></Bg>
-		<Spike :propspike="SpikeList"></Spike>
-		<Category></Category>
-		<BottomNav :propsurl='arrUrl'></BottomNav>
-		<Xiao></Xiao>
-		<Hongbao></Hongbao>
-		<Tranvel></Tranvel>
-	</div>
+  <div class="home">
+    <!-- 轮播区域 -->
+    <Banner></Banner>
+    <!-- menu菜单栏 -->
+    <Recommend></Recommend>
+    <!-- 菜单背景 -->
+    <Bg></Bg>
+    <!-- tab栏 -->
+    <Category></Category>
+    <!-- 热门推荐 -->
+    <Skipe></Skipe>
+    <!-- 小众种草 -->
+    <Xiao></Xiao>
+    <!-- 当季目的地 -->
+    <Destination></Destination>
+    <!-- 全球经典 -->
+    <Tranvel></Tranvel>
+    <!-- 底部导航栏 -->
+    <BottomNav :propsurl="arrUrl"></BottomNav>
+  </div>
 </template>
 
 <script>
-	//引入Banner组件
-	import Banner from './pages/Banner.vue'
-	import Recommend from './pages/Recommend.vue'
-	import Bg from './pages/Bg.vue'
-	import Category from './pages/Category.vue'
-	import BottomNav from '../default/BottomNav.vue'
-	import Spike from './pages/Spike.vue'
-	import Xiao from './pages/Xiao.vue'
-	import Hongbao from './pages/Hongbao'
-	import Tranvel from './pages/Tranvel.vue'
-	//导出组件
-	export default{
-		name:'Home',
-		//组件列表的调用
-		components:{
-			Banner,
-			Recommend,
-			Bg,
-			Category,
-			BottomNav,
-			Spike,
-			Xiao,
-			Hongbao,
-			Tranvel
-		},
-		data(){
-			return{
-				arrUrl : ['bottoms/homes.png' , 'bottoms/dingdan.png' , 'bottoms/slef.png'],
-				bannerList : [],
-				SpikeList : {},
-			}
-		},
-		created(){
-			//备份
-			let that = this;
-			//向dataHome.json文件发起异步请求
-			this.axios.get('/api/dataHome.json').then((res)=>{
-				let data = res.data.Homemsg[0];
-				//提取banner组件的数据
-				that.bannerList = data.BannerVueList;
-				this.SpikeList = data.SpikeVueList;
-			}).catch((error)=>{
-				console.log(error)
-			});
-		}
-	}
+import Banner from "../home/pages/Banner.vue";
+import Recommend from "../home/pages/Recommend.vue";
+import Bg from "../home/pages/Bg.vue";
+import Category from "../home/pages/Category.vue";
+import Skipe from "../home/pages/Spike.vue";
+import Xiao from "../home/pages/Xiao.vue";
+import Destination from "../home/pages/Destination.vue";
+import Tranvel from "../home/pages/Tranvel.vue";
+import BottomNav from "../default/BottomNav.vue";
+export default {
+  name: "Home",
+  components: {
+    BottomNav,
+    Banner,
+    Recommend,
+    Bg,
+    Category,
+    Skipe,
+    Xiao,
+    Destination,
+    Tranvel,
+  },
+  data() {
+    return {
+      arrUrl: ["bottoms/homes.png", "bottoms/dingdan.png", "bottoms/slef.png"],
+    };
+  },
+  methods: {},
+  mounted() {},
+  created() {},
+};
 </script>
 
-<style>
+<style scoped>
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home ::-webkit-scrollbar {
+  display: none;
+}
+
+.home {
+  height: 5rem;
+  overflow-y: visible;
+}
 </style>
-
-

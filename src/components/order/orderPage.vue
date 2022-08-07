@@ -3,7 +3,7 @@
 		<BottomNav :propsurl='arrUrl'></BottomNav>
 		<div class="header">
 			<aside>
-				<span><router-link to="/"><i class="iconfont icon">&#xe625;</i></router-link></span>
+				<span><router-link to="/"><i class="iconfont">&#xe625;</i></router-link></span>
 				
 				<span @click="show_titles()">全部订单<i class="iconfont" :class="{'default-title' : show_icon}">&#xe6bb;</i></span>
 				
@@ -19,13 +19,16 @@
 		<div class="show_txt" v-show="show_title">
 			<span v-for="item in nav_sonlist" :key="item.id" :class="{'defaults' : show_son == item.nav}" @click="getName(item.nav)">{{item.nav}}</span>
 		</div>	
-		
-		
-		<div class="bt_content">
-			<img src="../../../public/dingdan/dingdan_bg.png" >
-			<p>这里什么也没有</p>
-			<p>继续去探索未知的新世界吧</p>
+
+
+		<div class="content">
+			<img src="https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100214592.png">
 		</div>
+
+
+		
+		
+	
 		
 	</div>
 </template>
@@ -69,6 +72,8 @@
 
 			getNav(val){
 				this.show_nav = val
+				
+				
 			}
 		},
 		
@@ -93,9 +98,14 @@
 </script>
 
 <style scoped>
+
+.orderpage{
+	width: 100%;
+	height: 100vh;
+}
 	.header{
 		width: 100%;
-		height: 1rem;
+		height: 1.2rem;
 		background-color: rgb(245, 245, 245);
 	}
 	
@@ -146,12 +156,14 @@
 		float: left;
 		margin: 0 0.05rem;
 		text-indent: 0.2rem;
+		text-align: center;
 	}
 	
 	
 	.header_nav span{
 		margin: 0 0.8rem;
 		background-color: #E6C81A;
+		text-align: center;
 	}
 	
 	.default-span{
@@ -177,8 +189,7 @@
 		float: none;
 		float: initial;
 		width: 100%;
-		height: 15rem;
-		background-color: rgb(245, 245, 245);
+		display: flex;
 	}
 	
 	.content h3{
@@ -229,6 +240,28 @@
 	.bt_content p{
 		text-align: center;
 		font-size: 0.4rem;
+	}
+
+	.content{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+		height: 50vh;
+	}
+
+	.footer{
+		text-align: center;
+		font-weight: normal;
+		position: relative;
+		z-index: 100;
+		top: -1.4rem;
+	}
+
+	.footer h3,.footer h5{
+		font-size: 0.4rem;
+		margin: 0.2rem 0;
+		
 	}
 
 	

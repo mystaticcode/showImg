@@ -17,8 +17,8 @@ export default {
 </script>
 
 <style scoped>
-    .tanvel{
-        margin-top: 2rem;
-    }
+   .tanvel{
+       padding-bottom: 2rem;
+   }
 </style>
 

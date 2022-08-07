@@ -8,8 +8,17 @@
 </script>
 
 <style scoped>
+
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0;
+}
 	
 	.money{
+		width: 99%;
 		height: 1.4rem;
 		text-indent: 0.5rem;
 		background-color: rgb(245, 245, 245);

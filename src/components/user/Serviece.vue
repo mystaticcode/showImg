@@ -21,11 +21,11 @@ export default {
     data(){
 		return{
 			services:[
-				{id:1,imgs:'serviceimg/7.png' , txt:'常用收货地址'},
-				{id:2,imgs:'serviceimg/8.png' , txt:'常用出行人'},
-				{id:3,imgs:'serviceimg/9.png' , txt:'修改密码'},
-				{id:4,imgs:'serviceimg/10.png' , txt:'在线客服'},
-                {id:4,imgs:'serviceimg/11.png' , txt:'游侠客APP'},
+				{id:1,imgs:'https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100216450.png' , txt:'常用收货地址'},
+				{id:2,imgs:'https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100216451.png' , txt:'常用出行人'},
+				{id:3,imgs:'https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100216452.png' , txt:'修改密码'},
+				{id:4,imgs:'https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100216453.png' , txt:'在线客服'},
+                {id:4,imgs:'https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100216449.png' , txt:'游侠客APP'},
 			]
 				
 			
@@ -35,8 +35,16 @@ export default {
 </script>
 
 <style scoped>
+
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0;
+}
     .service{
-		width: 100%;
+		width: 99%;
 		overflow: hidden;
 		padding: 0.8rem 0 0;
 		background-color: white;

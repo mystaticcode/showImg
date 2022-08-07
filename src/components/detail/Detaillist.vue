@@ -240,7 +240,7 @@ export default {
      }
 	 
 	 .range h4 em{
-		 background: url(../../../public/searchs/bgs.png);
+		 background: url(https://codeslive.oss-cn-shenzhen.aliyuncs.com/img/202207100505160.png);
 		 background-size: 100% 100%;
 	 }
 

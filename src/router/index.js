@@ -1,14 +1,18 @@
 import {
 	createRouter,
-	createWebHistory
+	createWebHashHistory
 } from "vue-router";
 //导出Home组件
-import Home from '../components/home/Home.vue'
-import Order from '../components/order/Order.vue'
-import User from '../components/user/User.vue'
-import City from '../components/city/City.vue'
-import orderPage from '../components/order/orderPage.vue'
-import Detaillist from '../components/detail/Detaillist.vue'
+
+
+const Home = () => import('@/components/home/Home.vue');
+const User = () => import('@/components/user/User.vue');
+const City = () => import('@/components/city/City.vue');
+const Order = () => import('@/components/order/Order.vue');
+const orderPage = () => import('@/components/order/orderPage.vue');
+// const Detaillist = () => import('@/components/detail/Detaillist.vue');
+
+
 const routes = [{
 		//路由地址为空
 		path: '/',
@@ -41,17 +45,17 @@ const routes = [{
 		component: orderPage,
 	},
 
-	{
-		path: '/detaillist',
-		name: 'Detaillist',
-		component: Detaillist,
-	},
+	// {
+	// 	path: '/detaillist',
+	// 	name: 'Detaillist',
+	// 	component: Detaillist,
+	// },
 
 
 ];
 
 const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
+	history: createWebHashHistory(),
 	routes,
 });
 

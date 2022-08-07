@@ -56,7 +56,7 @@
 		},
 		created() {
 			let that = this;
-			this.axios.get('/api/city.json').then((res)=>{
+			this.axios.get('./api/city.json').then((res)=>{
 					
 					let data = res.data.data;
 					that.hostlist = data.hotCities;
