@@ -426,55 +426,158 @@
 					"days": "6天5晚"
 				}
 			],
-			
-			"nav_list" : [
-				{"id" :1,"nav": "全部"},
-				{"id" :2,"nav": "待付款"},
-				{"id" :3,"nav": "已付款"},
-				{"id" :4,"nav": "待评价"},
-				{"id" :5,"nav": "退款/售后"}
+			"nav_list": [
+				{
+					"id": 1,
+					"nav": "全部"
+				},
+				{
+					"id": 2,
+					"nav": "待付款"
+				},
+				{
+					"id": 3,
+					"nav": "已付款"
+				},
+				{
+					"id": 4,
+					"nav": "待评价"
+				},
+				{
+					"id": 5,
+					"nav": "退款/售后"
+				}
 			],
-			
-			"nav_sonlist" : [
-				{"id" :1,"nav": "全部订单"},
-				{"id" :2,"nav": "旅游订单"},
-				{"id" :3,"nav": "集市订单"},
-				{"id" :4,"nav": "户外卡订单"},
-				{"id" :5,"nav": "签证订单"},
-				{"id" :6,"nav": "房券订单"},
-				{"id" :7,"nav": "线路预售券订单"},
-				{"id" :8,"nav": "优惠券"}		
+			"nav_sonlist": [
+				{
+					"id": 1,
+					"nav": "全部订单"
+				},
+				{
+					"id": 2,
+					"nav": "旅游订单"
+				},
+				{
+					"id": 3,
+					"nav": "集市订单"
+				},
+				{
+					"id": 4,
+					"nav": "户外卡订单"
+				},
+				{
+					"id": 5,
+					"nav": "签证订单"
+				},
+				{
+					"id": 6,
+					"nav": "房券订单"
+				},
+				{
+					"id": 7,
+					"nav": "线路预售券订单"
+				},
+				{
+					"id": 8,
+					"nav": "优惠券"
+				}
 			],
-
-			"menus" : [
-					 {"type": 1, "typeName": "全球经典"},
-					 {"type": 402, "typeName": "户外"},
-					 {"type": 404, "typeName": "亲子"},
-					 {"type": 403, "typeName": "摄影"},
-					 {"type": 537, "typeName": "人文"},
-					 {"type": 509, "typeName": "房车"},
-					 {"type": 526, "typeName": "海岛"},
-					 {"type": 527, "typeName": "露营"},
-					 {"type": 525, "typeName": "自驾"},
-					 {"type": 506, "typeName": "越野派"},
-					 {"type": 406, "typeName": "同城"},
-					 {"type": 510, "typeName": "骑行"},
-					 {"type": 407, "typeName": "赛事"},
-					 {"type": 538, "typeName": "赏秋"}
+			"menus": [
+				{
+					"type": 1,
+					"typeName": "全球经典"
+				},
+				{
+					"type": 402,
+					"typeName": "户外"
+				},
+				{
+					"type": 404,
+					"typeName": "亲子"
+				},
+				{
+					"type": 403,
+					"typeName": "摄影"
+				},
+				{
+					"type": 537,
+					"typeName": "人文"
+				},
+				{
+					"type": 509,
+					"typeName": "房车"
+				},
+				{
+					"type": 526,
+					"typeName": "海岛"
+				},
+				{
+					"type": 527,
+					"typeName": "露营"
+				},
+				{
+					"type": 525,
+					"typeName": "自驾"
+				},
+				{
+					"type": 506,
+					"typeName": "越野派"
+				},
+				{
+					"type": 406,
+					"typeName": "同城"
+				},
+				{
+					"type": 510,
+					"typeName": "骑行"
+				},
+				{
+					"type": 407,
+					"typeName": "赛事"
+				},
+				{
+					"type": 538,
+					"typeName": "赏秋"
+				}
 			],
-			
-			
-			"list_banners" : [
-			    {"id" : 1 , "title":"奇遇圣诞节" ,"msg":"足不出市过圣诞" ,"img":"searchs/01.jpg"},
-			    {"id" : 2 , "title":"四姑娘山" ,"msg":"冰与火之歌", "img":"searchs/02.jpg"},
-			    {"id" : 3 , "title":"该泡温泉啦" ,"msg":"挑个酒店泡汤吧" ,"img":"searchs/03.jpg"},
-			    {"id" : 4 , "title":"三亚" ,"msg":"雪碧海蓝天","img":"searchs/04.jpg"},
-			    {"id" : 5 , "title":"十二月好货" ,"msg":"旅行指南go" ,"img":"searchs/05.jpg"},
-			    {"id" : 6 , "title":"暖冬福建" ,"msg":"23°的冬日海岸" ,"img":"searchs/06.jpg"}
+			"list_banners": [
+				{
+					"id": 1,
+					"title": "奇遇圣诞节",
+					"msg": "足不出市过圣诞",
+					"img": "searchs/01.jpg"
+				},
+				{
+					"id": 2,
+					"title": "四姑娘山",
+					"msg": "冰与火之歌",
+					"img": "searchs/02.jpg"
+				},
+				{
+					"id": 3,
+					"title": "该泡温泉啦",
+					"msg": "挑个酒店泡汤吧",
+					"img": "searchs/03.jpg"
+				},
+				{
+					"id": 4,
+					"title": "三亚",
+					"msg": "雪碧海蓝天",
+					"img": "searchs/04.jpg"
+				},
+				{
+					"id": 5,
+					"title": "十二月好货",
+					"msg": "旅行指南go",
+					"img": "searchs/05.jpg"
+				},
+				{
+					"id": 6,
+					"title": "暖冬福建",
+					"msg": "23°的冬日海岸",
+					"img": "searchs/06.jpg"
+				}
 			]
-			
-			
-			
 		}
 	]
 }
